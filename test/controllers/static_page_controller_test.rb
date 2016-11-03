@@ -13,7 +13,7 @@ class StaticPageControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
     get static_page_home_url
     assert_response :success
-    assert_select "title", "Home | #{@base_title}" #checks for the presence of a <title> tag
+    assert_select "title", "#{@base_title}" #checks for the presence of a <title> tag
   end
 
   test "should get help" do
